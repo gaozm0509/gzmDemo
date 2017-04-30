@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+
+target 'GzmDemo' do
+    pod 'IQKeyboardManager'
+    pod 'UIImage-Helpers'
+    pod 'Masonry'
+    pod 'MBProgressHUD'
+end
+
