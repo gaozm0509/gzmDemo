@@ -19,6 +19,7 @@
 		15CF66151E88F5000013BEC9 /* GzmDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF66141E88F5000013BEC9 /* GzmDemoUITests.m */; };
 		15CF662F1E88F9940013BEC9 /* MultipeerConnectivityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF662E1E88F9940013BEC9 /* MultipeerConnectivityTool.m */; };
 		15CF66321E88FA6A0013BEC9 /* ZMBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF66311E88FA6A0013BEC9 /* ZMBrowserViewController.m */; };
+		698DE47A783CBCA755431547 /* libPods-GzmDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE86F8EE5EC5BA5761E3116 /* libPods-GzmDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,9 @@
 		15CF662E1E88F9940013BEC9 /* MultipeerConnectivityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipeerConnectivityTool.m; sourceTree = "<group>"; };
 		15CF66301E88FA6A0013BEC9 /* ZMBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMBrowserViewController.h; sourceTree = "<group>"; };
 		15CF66311E88FA6A0013BEC9 /* ZMBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMBrowserViewController.m; sourceTree = "<group>"; };
+		4AE86F8EE5EC5BA5761E3116 /* libPods-GzmDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GzmDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E7A678D5E7BF39AB6CDB0 /* Pods-GzmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzmDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GzmDemo/Pods-GzmDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C3A2589D0ACB3714A09711 /* Pods-GzmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GzmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GzmDemo/Pods-GzmDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698DE47A783CBCA755431547 /* libPods-GzmDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,8 @@
 				15CF66081E88F5000013BEC9 /* GzmDemoTests */,
 				15CF66131E88F5000013BEC9 /* GzmDemoUITests */,
 				15CF65ED1E88F5000013BEC9 /* Products */,
+				52CD9C491DE4A445F8B97111 /* Pods */,
+				422C00EE3B2F875CD012D38B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +241,23 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		422C00EE3B2F875CD012D38B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AE86F8EE5EC5BA5761E3116 /* libPods-GzmDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CD9C491DE4A445F8B97111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				908E7A678D5E7BF39AB6CDB0 /* Pods-GzmDemo.debug.xcconfig */,
+				D1C3A2589D0ACB3714A09711 /* Pods-GzmDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15CF66191E88F5000013BEC9 /* Build configuration list for PBXNativeTarget "GzmDemo" */;
 			buildPhases = (
+				D6641063770670EF6CEA09AC /* [CP] Check Pods Manifest.lock */,
 				15CF65E81E88F5000013BEC9 /* Sources */,
 				15CF65E91E88F5000013BEC9 /* Frameworks */,
 				15CF65EA1E88F5000013BEC9 /* Resources */,
+				6C628573F9AD16AFC488D4F1 /* [CP] Embed Pods Frameworks */,
+				FCEED684B62952ECAA7E5BBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +389,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C628573F9AD16AFC488D4F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GzmDemo/Pods-GzmDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6641063770670EF6CEA09AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCEED684B62952ECAA7E5BBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GzmDemo/Pods-GzmDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15CF65E81E88F5000013BEC9 /* Sources */ = {
@@ -521,6 +596,7 @@
 		};
 		15CF661A1E88F5000013BEC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908E7A678D5E7BF39AB6CDB0 /* Pods-GzmDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MNR99UX34U;
@@ -535,6 +611,7 @@
 		};
 		15CF661B1E88F5000013BEC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C3A2589D0ACB3714A09711 /* Pods-GzmDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MNR99UX34U;
